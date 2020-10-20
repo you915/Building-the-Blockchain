@@ -1,0 +1,29 @@
+Node 1:
+Public address of the key:   0x123Af4d2B99aC9E10bf73E9faeD46A5a7167A484
+Path of the secret key file: node1\keystore\UTC--2020-10-20T00-42-47.507205000Z--123af4d2b99ac9e10bf73e9faed46a5a7167a484
+
+./geth --datadir node1 --unlock "0x123Af4d2B99aC9E10bf73E9faeD46A5a7167A484" --mine --rpc --allow-insecure-unlock
+
+./geth --datadir node1 --unlock "123Af4d2B99aC9E10bf73E9faeD46A5a7167A484" --mine --rpc --allow-insecure-unlock
+
+=enode://266f8d7b2226da0a1d2c10e68776f117c527faee0d559183613380c9e5f82de76e92478f14188b34428b820ed0409a5186862fc5b45638b9bb841575dbe335fd@127.0.0.1:30303
+
+Node 2:
+Public address of the key:   0xF9FD0a369E2aCCEe42E3516fabc55aB14f69b03f
+Path of the secret key file: node2\keystore\UTC--2020-10-20T00-43-32.551092400Z--f9fd0a369e2accee42e3516fabc55ab14f69b03f
+
+./geth --datadir node2 --unlock "0xF9FD0a369E2aCCEe42E3516fabc55aB14f69b03f" --mine --port 30304 --bootnodes "enode://266f8d7b2226da0a1d2c10e68776f117c527faee0d559183613380c9e5f82de76e92478f14188b34428b820ed0409a5186862fc5b45638b9bb841575dbe335fd@127.0.0.1:30303
+" --ipcdisable --allow-insecure-unlock
+
+./geth --datadir node2 --unlock "F9FD0a369E2aCCEe42E3516fabc55aB14f69b03f" --mine --port 30304 --bootnodes "enode://266f8d7b2226da0a1d2c10e68776f117c527faee0d559183613380c9e5f82de76e92478f14188b34428b820ed0409a5186862fc5b45638b9bb841575dbe335fd@127.0.0.1:30303
+" --ipcdisable --allow-insecure-unlock
+
+=enode://edbf5df64bef061e6445f3f5c767a4b2d4f6d3e1588a8571146a087eb0590f2c181e98ce5452c491d21a912ab2ba8f68844540d8ff2708d5546fe9b00fc73ee4@127.0.0.1:30304
+
+Wallet private key
+0xa4b866d1a0230add7585c184ded3a5e9441db638de36e5aac580e7a7220dcc93
+
+TX Hash: 0x3b766d70170cd478767bca6661f827ad67abf4f6de99d861e3dba8aae5f091a8
+Check TX Status
+
+TX Hash2: 0x109d823ae0e8c474869b65ec431f36f64d7f5d1b13959b730523bbf2a57dae85

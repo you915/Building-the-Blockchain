@@ -17,7 +17,7 @@ This homework will be a two-part series in which you will first create a case st
 For this part one assignment, your task is to create a case study that analyzes how a Canadian FinTech blockchain company is using technology to solve a standing financial problem in Canada.
 
 # ITM House
-![company](Images/company.JPG)
+![company](Images/company.jpg)
 
 ## Research the domain and company:
 
@@ -121,39 +121,55 @@ Be sure to include any preliminary setup information, such as installing depende
 
 #### Setup the custom out-of-the-box blockchain
 
-* Create a new project directory for your new network. Call it whatever you want!
-
-* Create a "Screenshots" folder inside of the project directory.
-
 * Create accounts for two (or more) nodes for the network with a separate `datadir` for each using `geth`.
 
+### Explain the configuration of the network, such as it's blocktime, chain ID, account passwords, ports, etc.
+- Network Name : ztestnet
+- Blocktime: How many seconds should blocks take. Default is 15
+- Chain ID: Required in Mycrypto app
+- Account Passwords: Password required for node 1 and node 2 to start mining and communicating
+- Ports: Sets the peer port
+
+### Node1
+![node1](Images/create_node1.JPG)
+
+### Node2
+![node2](Images/create_node2.JPG)
+
+* Create a new project directory for your new network. Call it whatever you want!
 * Run `puppeth`, name your network, and select the option to configure a new genesis block.
-
 * Choose the `Clique (Proof of Authority)` consensus algorithm.
-
 * Paste both account addresses from the first step one at a time into the list of accounts to seal.
-
 * Paste them again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
+![network](Images/puppeth.JPG)
 
 * You can choose `no` for pre-funding the pre-compiled accounts (0x1 .. 0xff) with wei. This keeps the genesis cleaner.
-
 * Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
-
 * Export genesis configurations. This will fail to create two of the files, but you only need `networkname.json`.
-
 * You can delete the `networkname-harmony.json` file.
-
 * Screenshot the `puppeth` configuration once complete and save it to the Screenshots folder.
+![network](Images/puppeth2.JPG)
 
 * Initialize each node with the new `networkname.json` with `geth`.
-
 * Run the first node, unlock the account, enable mining, and the RPC flag. Only one node needs RPC enabled.
-
 * Set a different peer port for the second node and use the first node's `enode` address as the `bootnode` flag.
+![node1](Images/node1.JPG)
 
 * Be sure to unlock the account and enable mining on the second node!
+![node2](Images/node2.JPG)
 
 * You should now see both nodes producing new blocks, congratulations!
+
+### Be sure to include all of the `geth` flags required to get both nodes to mine and explain what they mean.
+- Networkid: Identifies the appropriate network provided a network id
+- Password: Finds password in text file to allow unlock.
+- Port: Sets the peer port.
+- Bootnodes: Tells geth which node to connect to provided an enode address
+- Rpc: Exposes a port on the node allowing commucation with the outside world
+- Mine: Tells node to mine new blocks
+- Minerthreads: Tells get how many CPU “workers” to use
+- Unlock: Unlocks the account provided an address
+
 
 #### Send a test transaction
 
@@ -161,19 +177,22 @@ Be sure to include any preliminary setup information, such as installing depende
 
 * You will need to use a custom network, and include the chain ID, and use ETH as the currency.
 
-![custom-node](Images/custom-node.png)
+![custom-node](Images/crypto_node.JPG)
 
 * Import the keystore file from the `node1/keystore` directory into MyCrypto. This will import the private key.
 
+![keystore_file](Images/private_key.JPG)
+
 * Send a transaction from the `node1` account to the `node2` account.
+
+![transaction](Images/transaction.JPG)
 
 * Copy the transaction hash and paste it into the "TX Status" section of the app, or click "TX Status" in the popup.
 
 * Screenshot the transaction metadata (status, tx hash, block number, etc) and save it to your Screenshots folder.
+![transaction-success](Images/transaction-success.png)
 
 * Celebrate, you just created a blockchain and sent a transaction!
-
-![transaction-success](Images/transaction-success.png)
 
 #### Create a repository, and instructions for launching the chain
 

@@ -12,7 +12,7 @@ This homework will be a two-part series in which you will first create a case st
 
 3. Push the above changes to GitHub.
 
-# Blockchain Case Study
+# 1) Blockchain Case Study
 
 For this part one assignment, your task is to create a case study that analyzes how a Canadian FinTech blockchain company is using technology to solve a standing financial problem in Canada.
 
@@ -39,8 +39,6 @@ What makes ITM House special? It has built its reputation on providing many comp
 ### Product Marketing - Specialize product strategy and usability, content marketing and social media marketing for technology companies
 ![product_marketing](Images/product_marketing.JPG)
 
-https://www.itmhouse.com/wattum/
-
 # Write a detailed case study of the company.
 
 ### Problem
@@ -58,6 +56,10 @@ Using the technologies such as Hashrate Monitoring, Firmware Deployment, Heatmap
 ### Why this may be interesting?
 ITM House developed for the customer mining platform with opportunity to profit from the growing cryptocurrency ecosystem. Now WATTUM is the most effortless way of receiving income from crypto, with mining centres that are specialized in mining using ASIC equipment and GPU. WATTUM uses hashing algorithms for Bitcoin mining and various altcoins such as Zcash, Siacoin, Decred, Ethereum and others. 
 
+### Conclusion
+
+![summary](Images/summary.JPG)
+
 ### Things to Keep in Mind for a Case Study
 
 * Continuity of supply of top class services to the end users
@@ -68,13 +70,15 @@ ITM House developed for the customer mining platform with opportunity to profit 
 
 * The worldwide impact in the market if WATTUM's services are one of the best in Canada
 
-Reference the example [TokenFunder Case Study](Resources/TokenFunder_Case_Study.md) to get an understanding of the format and content that you'll need to write.
+# Reference
+- https://www.itmhouse.com/product-discovery/
+- https://www.itmhouse.com/web-mobile/
+- https://www.itmhouse.com/devops/
+- https://www.itmhouse.com/product-marketing/
+- https://www.itmhouse.com/case-studies/
+- https://www.itmhouse.com/wattum/
 
-This assignment will challenge you to learn more about Canadian advancements in the blockchain industry.
-
-## Proof of Authority Development Chain
-
-For part two of this assignment, you will take on the role of a new developer at a small bank.
+# 2) For part two of this assignment, you will take on the role of a new developer at a small bank.
 
 Your mission, should you choose to accept it, will be to set up a testnet blockchain for your organization.
 
@@ -187,9 +191,13 @@ Be sure to include any preliminary setup information, such as installing depende
 
 ![transaction](Images/transaction.JPG)
 
+- Error message : "Block sealing failed" came up even after 3 tries. Due to this, the transaction is still pending.
+![error_message](Images/error_message.JPG)
+
 * Copy the transaction hash and paste it into the "TX Status" section of the app, or click "TX Status" in the popup.
 
 * Screenshot the transaction metadata (status, tx hash, block number, etc) and save it to your Screenshots folder.
+- Successful one should look like this below:
 ![transaction-success](Images/transaction-success.png)
 
 * Celebrate, you just created a blockchain and sent a transaction!

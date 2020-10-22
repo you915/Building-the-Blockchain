@@ -21,7 +21,7 @@ For this part one assignment, your task is to create a case study that analyzes 
 
 ## Research the domain and company:
 
-ITM House was found in 2007. ITM House provides many different services such as product development, Web&Mobile, DevOps, and Product Marketing. 
+ITM House was found in 2007. ITM House provides many different services such as product development, Web&Mobile, DevOps, and Product Marketing using blockchain technology. 
 
 What makes ITM House special? It has built its reputation on providing many companies and businesses to transform, innovate and compete in the current market. The company is a global company which provides a wide range of product developing and digital solutions that satisfy many different companies and businesses' expectations. From a small start-up companies to a large established companies, the company can provide the best services for everyone. That what makes ITM House unique.
 
@@ -53,10 +53,21 @@ Using the technologies such as Hashrate Monitoring, Firmware Deployment, Heatmap
 
 ![why_important2](Images/why_important2.JPG)
 
+# Technology
+Hashrate monitoring: Mining hashrate is a key security metric; more hashing/computing power in the network, the greater the security and its overall resistance to attack. Although Bitcoin’s exact hashing power is unknown, it is possible to estimate it from the number of blocks being mined and the current block difficulty.
+
+![hashrate](Images/hashrate.JPG)
+
+A heat map is a graphical representation of data where values are depicted by color. Heat maps are very useful to visualize complex data at a first glance
+
+![heatmap](Images/heatmap.JPG)
+
 ### Why this may be interesting?
 ITM House developed for the customer mining platform with opportunity to profit from the growing cryptocurrency ecosystem. Now WATTUM is the most effortless way of receiving income from crypto, with mining centres that are specialized in mining using ASIC equipment and GPU. WATTUM uses hashing algorithms for Bitcoin mining and various altcoins such as Zcash, Siacoin, Decred, Ethereum and others. 
 
 ### Conclusion
+
+ITM House work paid off. WATTUM's productivity growth went up by 7%, sales increase by 18%, user growth increases by 20% and 15% in cost savings and reduction. This is an amazing work provided by ITM House.
 
 ![summary](Images/summary.JPG)
 
@@ -77,7 +88,8 @@ ITM House developed for the customer mining platform with opportunity to profit 
 - https://www.itmhouse.com/product-marketing/
 - https://www.itmhouse.com/case-studies/
 - https://www.itmhouse.com/wattum/
-
+- https://www.blockchain.com/charts/hash-rate
+- https://www.hotjar.com/heatmaps/
 # 2) For part two of this assignment, you will take on the role of a new developer at a small bank.
 
 Your mission, should you choose to accept it, will be to set up a testnet blockchain for your organization.
